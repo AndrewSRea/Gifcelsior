@@ -1,0 +1,63 @@
+body {
+    background-image: url("../images/avengeBG.jpg");
+    background-repeat: repeat;
+  }
+  
+  h1 {
+    color: white;
+    font-size: 50px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .button {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .capButton {
+    margin-left: 20px;
+    background: blue;
+    border: 1px solid red;
+  }
+  
+  .ironButton {
+    background: red;
+    color: yellow;
+    border: 1px solid yellow;
+  }
+  
+  .thorButton {
+    background: rgb(87, 85, 85);
+    border: 1px solid blue;
+  }
+  
+  .hulkButton {
+    background: green;
+    border: 1px solid purple;
+  }
+  
+  .widowButton {
+    background: black;
+    border: 1px solid red;
+  }
+  
+  .avengeForm {
+    float: right;
+    clear: both;
+    width: 30%;
+    margin: 30px 20px;
+    color: white;
+  }
+  
+  input {
+    margin: 5px 20px 5px 0;
+    width: 100%;
+  }
