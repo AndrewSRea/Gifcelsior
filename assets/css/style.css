@@ -9,6 +9,13 @@ body {
     padding: 20px;
     text-align: center;
   }
+
+  h2 {
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
   
   .button {
     border: none;
@@ -36,6 +43,7 @@ body {
   
   .thorButton {
     background: rgb(87, 85, 85);
+    color: red;
     border: 1px solid blue;
   }
   
@@ -47,6 +55,11 @@ body {
   .widowButton {
     background: black;
     border: 1px solid red;
+  }
+
+  .hawkButton {
+    background: purple;
+    border: 1px solid blue;
   }
   
   .avengeForm {
