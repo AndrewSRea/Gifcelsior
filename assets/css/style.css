@@ -3,8 +3,14 @@ body {
     background-repeat: repeat;
   }
   
+  .avengeHead {
+    margin: 0 0 10px 0;
+    border-bottom: 
+  }
+
   h1 {
-    color: white;
+    color: red;
+    font-family: 'Bungee Inline', cursive;
     font-size: 50px;
     padding: 20px;
     text-align: center;
@@ -12,6 +18,7 @@ body {
 
   h2 {
     color: white;
+    font-family: 'Verela Round', sans-serif;
     font-size: 20px;
     padding: 20px;
     text-align: center;
@@ -61,6 +68,22 @@ body {
     background: purple;
     border: 1px solid blue;
   }
+
+  .avengeButton {
+    margin-left: 20px;
+    background: yellow;
+    color: blue;
+    border: 1px solid red;
+  }
+
+  label, p {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+  }
+
+  #show {
+    margin: 5px 5px 5px 5px;
+  }
   
   .avengeForm {
     float: right;
@@ -73,4 +96,15 @@ body {
   input {
     margin: 5px 20px 5px 0;
     width: 100%;
+  }
+
+  .avengeGifs {
+    clear: both;
+    display: inline;
+    flex-wrap: wrap;
+  }
+
+  .avengeGiphy {
+    padding: 2px;
+    width: 80%;
   }
