@@ -1,13 +1,14 @@
 $(document).ready(function() {
     
-    var topics = [];
+    var topics = ["capButton", "ironButton", "thorButton", "hulkButton",
+                  "widowButton", "hawkButton", "gifButtons"];
     
-    function displayNetflixShow() {
+    function displayAvengerShow() {
     
         var x = $(this).data("search");
         console.log(x);
     
-        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + x + "api_key=f87fGo11IwG908E6QCnje05YF4IU5PLn&q=&limit=10&offset=0&rating=PG-13&lang=en"
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + x + "&api_key=3VYz2Ld7JFYXNsjVDPbpa2RrUGCVpEaG&limit=10";
     
         console.log(queryURL);
     
@@ -39,7 +40,6 @@ $(document).ready(function() {
         });
     }
     
-    //Submit button click event takes search term from form input, trims and pushes to topics array, displays button
     $("#addAvenger").on("click", function(event) {
         event.preventDefault();
         var newShow = $("#inputAvenger").val().trim();
@@ -49,10 +49,10 @@ $(document).ready(function() {
         displayButtons();
     });
     
-    //Function iterates through topics array to display button with array values in "myButtons" section of HTML
     function displayButtons() {
         $("#gifButtons").empty();
         for (var i = 0; i < topics.length; i++) {
+            console.log(topics[i])
             var a = $('<button class="button avengeButton">');
             a.attr("id", "show");
             a.attr("data-search", topics[i]);
@@ -63,13 +63,10 @@ $(document).ready(function() {
     
     displayButtons();
     
-    //Click event on button with id of "show" executes displayNetflixShow function
     $(document).on("click", "#show", displayAvengerShow);
     
-    //Click event on gifs with class of "avengeGiphy" executes pausePlayGifs function
     $(document).on("click", ".avengeGiphy", pausePlayGifs);
     
-    //Function accesses "data-state" attribute and depending on status, changes image source to "data-animate" or "data-still"
     function pausePlayGifs() {
         var state = $(this).attr("data-state");
         if (state === "still") {
