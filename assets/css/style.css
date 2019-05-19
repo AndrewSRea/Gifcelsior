@@ -1,110 +1,83 @@
 body {
-    background-image: url("../images/avengeBG.jpg");
-    background-repeat: repeat;
-  }
-  
-  .avengeHead {
-    margin: 0 0 10px 0;
-    border-bottom: 
-  }
+  background-image: url("../images/avengeBG.jpg");
+  background-repeat: repeat;
+}
 
-  h1 {
-    color: red;
-    font-family: 'Bungee Inline', cursive;
-    font-size: 50px;
-    padding: 20px;
-    text-align: center;
-  }
+.avengeHead {
+  margin: 0 0 10px 0;
+}
 
-  h2 {
-    color: white;
-    font-family: 'Verela Round', sans-serif;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .button {
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
-  
-  .capButton {
-    margin-left: 20px;
-    background: blue;
-    border: 1px solid red;
-  }
-  
-  .ironButton {
-    background: red;
-    color: yellow;
-    border: 1px solid yellow;
-  }
-  
-  .thorButton {
-    background: rgb(87, 85, 85);
-    color: red;
-    border: 1px solid blue;
-  }
-  
-  .hulkButton {
-    background: green;
-    border: 1px solid purple;
-  }
-  
-  .widowButton {
-    background: black;
-    border: 1px solid red;
-  }
+h1 {
+  color: red;
+  font-family: 'Bungee Inline', cursive;
+  font-size: 50px;
+  padding: 20px;
+  text-align: center;
+}
 
-  .hawkButton {
-    background: purple;
-    border: 1px solid blue;
-  }
+h2 {
+  color: white;
+  font-family: 'Verela Round', sans-serif;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
 
-  .avengeButton {
-    margin-left: 20px;
-    background: yellow;
-    color: blue;
-    border: 1px solid red;
-  }
+.avengePage {
+  margin: 0 0 20px 20px;
+}
 
-  label, p {
-    font-family: 'Varela Round', sans-serif;
-    font-size: 18px;
-  }
+#avengers {
+  margin-right: 2px;
+  background: red;
+  color: blue;
+  border: 1px solid white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+}
 
-  #show {
-    margin: 5px 5px 5px 5px;
-  }
-  
-  .avengeForm {
-    float: right;
-    clear: both;
-    width: 30%;
-    margin: 30px 20px;
-    color: white;
-  }
-  
-  input {
-    margin: 5px 20px 5px 0;
-    width: 100%;
-  }
+#gifButtons {
+  background: red;
+  color: blue;
+  border: 1px solid white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
-  .avengeGifs {
-    clear: both;
-    display: inline;
-    flex-wrap: wrap;
-  }
+label, p {
+  font-family: 'Verela Round', sans-serif
+font-size: 18px;
+}
 
-  .avengeGiphy {
-    padding: 2px;
-    width: 80%;
-  }
+.avengeForm {
+  float: right;
+  clear: both;
+  width: 30%;
+  margin: 30px 20px;
+  color: white;
+}
+
+input {
+  margin: 5px 20px 5px 0;
+  width: 100%;
+}
+
+#avengeGifs {
+  clear: both;
+  display: inline;
+  flex-wrap: wrap;
+}
+
+.avengerGiphy {
+  padding: 2px;
+  width: 80%;
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="UTF-8">
         <title>Avengers Gifssemble!</title>
@@ -7,43 +7,46 @@
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
-
     </head>
     <body>
+
         <div class="avengeHead">
             <h1>Avengers Gifssemble!</h1>
         </div>
         <div class="avengePage">
-            <h2>Click the buttons below to display GIPHYs of your favorite Avengers!
-                Click each GIPHY video to pause it or play it.
-            </h2>
-            <div class="avengeButtons">
-                <button id="show" class="button capButton">Captain America</button>
-                <button id="show" class="button ironButton">Iron Man</button>
-                <button id="show" class="button thorButton">Thor</button>
-                <button id="show" class="button hulkButton">Hulk</button>
-                <button id="show" class="button widowButton">Black Widow</button>
-                <button id="show" class="button hawkButton">Hawkeye</button>
+            <h2>Click the buttons below to display GIPHYs of your favorite Avengers! Click each GIPHY video to pause or play it.</h2>
+            <div class=avengeButtons">
+                    <button id="avengers" data-search="Captain America">Captain America</button>
+                    <button id="avengers" data-search="Iron Man">Iron Man</button>
+                    <button id="avengers" data-search="Thor">Thor</button>
+                    <button id="avengers" data-search="Hulk">Hulk</button>
+                    <button id="avengers" data-search="Black Widow">Black Widow</button>
+                    <button id="avengers" data-search="Hawkeye">Hawkeye</button>
 
-                <div id="gifButtons"></div>
-
+                    <div id="gifButtons"></div>
             </div>
-
-            <div id="show" class="avengeGifs"></div>
-
-            <div class="avengeForm">
-                <form>
-                    <label for="inputAvenger">Add an Avenger!</label>
-                    <input type="text" id="inputAvenger" name="avenger">
-                    <p>(OK, it doesn't have to be an Avenger. Just add your favorite superhero.)</p>
-                    <input id="addAvenger" type="submit" value="submit">
-                </form>
-            </div>
-
         </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="assets/javascript/giphy.js"></script>
+        <div class="avengeForm">
+            <form class="form-inline" id="avengeSearch">
+                <div class="form-group">
+                    <label for="inputAvenger">Add an Avenger!</label>
+                    <input type="text" id="inputAvenger">
+                    <p>(OK, it doesn't have to be an Avenger. Just add your favorite superhero.)</p>
+                </div>
+                <!-- Button triggers show to be added -->
+                <input id="addAvenger" type="submit" value="submit">
+            </form>
+        </div>
+
+        <div class="gifArea">
+            <div class="avengeBox"></div>
+                <span><div id="avengeGifs"></div></span>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/javascript/giphy.js"></script>    
 
     </body>
 
